@@ -1,0 +1,5 @@
+canvas {
+    display: block; /* Elimina el espacio extra debajo del canvas */
+    margin: 0 auto; /* Centra el canvas si no ocupa todo el ancho */
+    background: gray; /* Color de fondo ligero para el canvas */
+}

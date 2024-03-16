@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Menu from './components/Menu';
+import CliqueVisualization from './components/CliqueVisualization';
 
 function App() {
+
+  const [view, setView] = useState('menu');
+
+  const handleCliqueClick = () => {
+      setView('clique');
+  };
+
+  const handleGraphColoringClick = () => {
+      console.log("Coloración de Grafos");
+  };
+
+  const handleIndependentSetClick = () => {
+      console.log("Conjunto Independiente");
+  };
+
+  const handleBack = () => {
+    setView('menu');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          {view === 'menu' ? (
+              <Menu
+                  onCliqueClick={handleCliqueClick}
+                  onGraphColoringClick={handleGraphColoringClick}
+                  onIndependentSetClick={handleIndependentSetClick}
+              />
+          ) : null}
+          {view === 'clique' ? <CliqueVisualization onBack={handleBack} /> : null}
+      </div>
   );
 }
 
