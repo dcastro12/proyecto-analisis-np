@@ -70,17 +70,18 @@ const Graph = ({ nodes, setNodes, edges, setEdges }) => {
                 for (let i = nodes.length - 1; i >= 0; i--) {
                     const d = p.dist(p.mouseX, p.mouseY, nodes[i].x, nodes[i].y);
                     if (d < 15) {
-                        selectedNodeIndex = null; // Deselecciona el nodo si está seleccionado
-                        nodes.splice(i, 1); // Elimina el nodo
-                        // Elimina todas las aristas conectadas al nodo eliminado
-                        edges = edges.filter(edge => edge.start !== i && edge.end !== i);
-                        edges = edges.filter(edge => edge.end !== i && edge.start !== i);
-                        // Ajusta los índices de los nodos en las aristas restantes
-                        edges.forEach(edge => {
-                            if (edge.start > i) edge.start--;
-                            if (edge.end > i) edge.end--;
-                        });
-                        
+                        // Crea una nueva lista de nodos sin el nodo eliminado
+                        const newNodes = nodes.filter((_, index) => index !== i);
+                        setNodes(newNodes);
+        
+                        // Crea una nueva lista de aristas sin las conectadas al nodo eliminado
+                        const newEdges = edges.filter(edge => edge.start !== i && edge.end !== i)
+                            .map(edge => ({
+                                start: edge.start > i ? edge.start - 1 : edge.start,
+                                end: edge.end > i ? edge.end - 1 : edge.end,
+                            }));
+                        setEdges(newEdges);
+        
                         break;
                     }
                 }
