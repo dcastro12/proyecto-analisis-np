@@ -52,6 +52,11 @@ const Graph = ({ nodes, setNodes, edges, setEdges }) => {
                 }
 
                 // Si se hizo clic en el lienzo pero no en un nodo, y no hay nodo seleccionado, crea un nuevo nodo
+                if(!nodeFound && selectedNodeIndex !== null){
+                    selectedNodeIndex = null;
+                }
+
+                // Si se hizo clic en el lienzo pero no en un nodo, y no hay nodo seleccionado, crea un nuevo nodo
                 if (!nodeFound && selectedNodeIndex === null) {
                     nodes.push({ x: p.mouseX, y: p.mouseY });
                 }
