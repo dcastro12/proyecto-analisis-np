@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-danger {
+  background-color: #85444b !important;
+}
+
+.btn-danger:hover {
+  background-color: #583034 !important;
+}
+
+.btn-warning {
+  background-color: #948453 !important;
+}
+
+.btn-warning:hover {
+  background-color: #665a38 !important;
+}
