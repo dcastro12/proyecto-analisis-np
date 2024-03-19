@@ -1,0 +1,95 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 460" width="480" height="460">
+	<title>graphColoring-svg</title>
+	<style>
+		.s0 { fill: none } 
+		.s1 { opacity: .9;fill: #97b787 } 
+		.s2 { fill: #a3d58a } 
+		.s3 { opacity: .7;fill: #ababec;stroke: #8a8ae9;stroke-width: 2 } 
+	</style>
+	<path id="backgroundrect" class="s0" d="m0 0h480v460h-480z"/>
+	<g id="Layer">
+		<g id="svg_1">
+			<path id="svg_2" fill-rule="evenodd" class="s1" d="m259.5 40.5q-2.6 1.7-3 5-5.6 7.5-15 8-2.5 0-5 0-9.4-0.5-15-8-0.4-3.3-3-5-4.3-32.4 28-28.5 18.3 8.7 13 28.5z"/>
+		</g>
+		<g id="svg_3">
+			<path id="svg_4" fill-rule="evenodd" class="s2" d="m232.5 15.5q20.2-3.2 24 16.5-2.9 19.8-23 17-15.6-7-10.5-23.5 3.1-6.7 9.5-10z"/>
+		</g>
+		<g id="svg_5" style="opacity: .7">
+			<path id="svg_6" fill-rule="evenodd" class="s3" d="m218.5 40.5q2.6 1.7 3 5-85.5 61.5-170 124-3-2-5-5 86-62 172-124z"/>
+		</g>
+		<g id="svg_7" style="opacity: .7">
+			<path id="svg_8" fill-rule="evenodd" class="s3" d="m259.5 40.5q86.6 61.8 172 125-1.5 2.5-4 4-85.5-62-171-124 0.4-3.3 3-5z"/>
+		</g>
+		<g id="svg_9" style="opacity: .8">
+		</g>
+		<g id="svg_11">
+		</g>
+		<g id="svg_13">
+		</g>
+		<g id="svg_15" style="opacity: .7">
+			<path id="svg_16" class="s3" d="m235 146"/>
+		</g>
+		<g id="svg_17">
+			<path id="svg_18" fill-rule="evenodd" class="s1" d="m46.5 164.5q2 3 5 5 4.8 7.2 4 16-1.8 2.7-2 6-4.3 9.9-15 12-3 0-6 0-19.2-1.7-20-21 1.3-20.1 21.5-22 6.7 0.7 12.5 4z"/>
+		</g>
+		<g id="svg_19">
+			<path id="svg_20" fill-rule="evenodd" class="s1" d="m445.5 204.5q-2.6-1.4-6-1-10.1-2.5-14-12-0.1-3.4-2-6-0.8-8.8 4-16 2.5-1.5 4-4 20.5-11.8 33.5 8 6.2 25.7-19.5 31z"/>
+		</g>
+		<g id="svg_21">
+			<g id="svg_29" style="opacity: .7">
+				<path id="svg_30" fill-rule="evenodd" class="s3" d="m55.5 185.5l295.8 227.2-3.1 4.5c0 0-279.1-215-294.7-225.7z"/>
+				<path id="svg_30 copy" fill-rule="evenodd" class="s3" d="m52.6 177.8l372.9 3.8 0.3 5.4c0 0-352.3-4-371.2-3.2z"/>
+				<path id="svg_30 copy 2" fill-rule="evenodd" class="s3" d="m429.7 195.7l-300 221.6-3.5-4.2c0 0 283.7-208.9 298.3-221z"/>
+				<path id="svg_30 copy 3" fill-rule="evenodd" class="s3" d="m238.7 53.9l-121.6 352.6-5.2-1.4c0 0 115.3-333 120.5-351.1z"/>
+				<path id="svg_30 copy 4" fill-rule="evenodd" class="s3" d="m245.7 48.4l119 357.3-5.1 2c0 0-112-337.7-119-355.5z"/>
+			</g>
+		</g>
+		<g id="svg_23">
+		</g>
+		<g id="svg_25">
+		</g>
+		<g id="svg_27">
+		</g>
+		<g id="svg_31" style="opacity: .8">
+		</g>
+		<g id="svg_33">
+		</g>
+		<g id="svg_35">
+		</g>
+		<g id="svg_37" style="opacity: .7">
+			<path id="svg_38" fill-rule="evenodd" class="s3" d="m32.5 203.5q3 0 6 0 33.1 100.8 65 202-2.1 1.6-5 2-33.9-101.7-66-204z"/>
+		</g>
+		<g id="svg_39" style="opacity: .7">
+			<path id="svg_40" fill-rule="evenodd" class="s3" d="m439.5 203.5q3.4-0.4 6 1-33 102.5-66 205-3.6-1.3-6-4 33.3-100.8 66-202z"/>
+		</g>
+		<g id="svg_41">
+		</g>
+		<g id="svg_43">
+		</g>
+		<g id="svg_45">
+		</g>
+		<g id="svg_47">
+		</g>
+		<g id="svg_49" style="opacity: .7">
+		</g>
+		<g id="svg_51" style="opacity: .7">
+		</g>
+		<g id="svg_53">
+			<path id="svg_54" fill-rule="evenodd" class="s1" d="m118.5 406.5q1.6 3.1 5 4 7.8 6.6 7 17-1.4 2.1-1 5-4.8 14.6-20.5 16-23.8-3.2-21-27 2-9.5 10.5-14 2.9-0.4 5-2 7.5-1.3 15 1z"/>
+		</g>
+		<g id="svg_55">
+			<path id="svg_56" fill-rule="evenodd" class="s1" d="m373.5 405.5q2.4 2.7 6 4 11.6 10.6 6.5 26-9.3 16.3-27.5 11.5-10.5-3.8-13-14.5 0.4-2.9-1-5-0.7-11.2 8-18 3.6-1.3 6-4 7.5-2 15 0z"/>
+		</g>
+		<g id="svg_57">
+			<path id="svg_58" fill-rule="evenodd" class="s2" d="m102.5 409.5q20.2-3.2 24 16.5-2.9 19.8-23 17-15.6-7-10.5-23.5 3.1-6.7 9.5-10z"/>
+		</g>
+		<g id="svg_59">
+			<path id="svg_60" fill-rule="evenodd" class="s2" d="m359.5 409.5q20.1-3.2 24 16.5-2.9 19.9-23 17-15.6-7-10.5-23.5 3.1-6.7 9.5-10z"/>
+			<path id="svg_60 copy" fill-rule="evenodd" class="s2" d="m438.5 165.5q20.1-3.2 24 16.5-2.9 19.9-23 17-15.6-7-10.5-23.5 3.1-6.7 9.5-10z"/>
+			<path id="svg_60 copy 2" fill-rule="evenodd" class="s2" d="m27.5 165.5q20.1-3.2 24 16.5-2.9 19.9-23 17-15.6-7-10.5-23.5 3.1-6.7 9.5-10z"/>
+		</g>
+		<g id="svg_61" style="opacity: .7">
+			<path id="svg_62" fill-rule="evenodd" class="s3" d="m130.5 427.5q107 0 214 0 1.4 2.1 1 5-108 0-216 0-0.4-2.9 1-5z"/>
+		</g>
+	</g>
+</svg>

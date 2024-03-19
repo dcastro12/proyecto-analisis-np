@@ -3,3 +3,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+.img-menu {
+    padding: 1.5rem;
+}
+
+.img-menu.hover-blue:hover {
+    background-color: #8bdcf03f;
+}
+
+.img-menu.hover-yellow:hover {
+    background-color: #ffe6993f;
+}
+
+.img-menu.hover-pink:hover {
+    background-color: #b882c33f;
+}
