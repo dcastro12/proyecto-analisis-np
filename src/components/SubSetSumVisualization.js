@@ -76,7 +76,7 @@ const SubSetSumVisualization = ({ onBack }) => {
             <h2 className='text-blue'>Botones</h2>
             <ul>
                 <li><strong>Regresar:</strong> Vuelve al menú inicial.</li>
-                <li><strong>Calcular subconjuntos:</strong> Ejecuta el algoritmo para encontrar todos los subconjuntos que sumados son iguales a el objetivo, dentro del conjunto proporcionado.</li>
+                <li><strong>Calcular subconjuntos:</strong> Ejecuta el algoritmo para encontrar todos los subconjuntos en los cuales la suma de sus elementos es igual a el objetivo, dentro del conjunto proporcionado.</li>
             </ul>
         </div>
     );
