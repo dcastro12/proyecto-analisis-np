@@ -1,13 +1,46 @@
 body {
   margin: 0;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #171a1b !important;
+  overflow-x: hidden;
+}
+
+body * {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif !important;
+}
+
+*::-webkit-scrollbar {
+  -webkit-appearance: none;
+  z-index: 2;
+}
+
+*::-webkit-scrollbar:vertical {
+  width: 10px;
+  z-index: 2;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3f445c;
+  border-radius: 20px;
+  z-index: 2;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+input {
+  background-color: #191f2c !important;
+  color: #d3cdc1 !important;
+}
+
+input::placeholder {
+  color: #d3cdc179 !important;
+}
+
+.text-white {
+  color: #d3cdc1 !important;
 }
 
 .text-green {
@@ -26,6 +59,26 @@ code {
   color: #b882c3 !important;
 }
 
+.text-red {
+  color: #ff7c8b !important;
+}
+
+.bg-gray {
+  background-color: #373c3f !important;
+}
+
+.bg-darkBlue {
+  background-color: #191f2c !important;
+}
+
+.btn-info {
+  background-color: #8bdbf0 !important;
+}
+
+.btn-info:hover {
+  background-color: #426a74 !important;
+}
+
 .btn-danger {
   background-color: #85444b !important;
 }
@@ -40,4 +93,8 @@ code {
 
 .btn-warning:hover {
   background-color: #665a38 !important;
+}
+
+.shadow-green {
+  box-shadow: 0 0 0 0.5rem #a3d58aa6 !important;
 }

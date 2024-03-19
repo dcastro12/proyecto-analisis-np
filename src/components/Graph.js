@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import p5, { Color } from 'p5';
 import './Graph.css';
 
+// Componente Graph que recibe nodos y aristas como props y permite interacción mediante p5.js
 const Graph = ({ nodes, setNodes, edges, setEdges }) => {
     const canvasRef = useRef(null);
     let selectedNodeIndex = null;
@@ -57,20 +58,25 @@ const Graph = ({ nodes, setNodes, edges, setEdges }) => {
             }
         };
 
+        // Maneja el evento de presionar el botón del mouse, específicamente para eliminar nodos con clic derecho
         const handleMousePressed = (e) => {
             if (p.mouseButton === p.RIGHT) {
+                // Busca si se hizo clic derecho en algún nodo para eliminarlo junto con sus aristas
                 for (let i = nodes.length - 1; i >= 0; i--) {
                     const d = p.dist(p.mouseX, p.mouseY, nodes[i].x, nodes[i].y);
                     if (d < 15) {
-                        nodes.splice(i, 1);
-                        edges = edges.filter(edge => edge.start !== i && edge.end !== i);
-                        edges = edges.filter(edge => edge.end !== i && edge.start !== i);
-
-                        edges.forEach(edge => {
-                            if (edge.start > i) edge.start--;
-                            if (edge.end > i) edge.end--;
-                        });
-
+                        // Crea una nueva lista de nodos sin el nodo eliminado
+                        const newNodes = nodes.filter((_, index) => index !== i);
+                        setNodes(newNodes);
+        
+                        // Crea una nueva lista de aristas sin las conectadas al nodo eliminado
+                        const newEdges = edges.filter(edge => edge.start !== i && edge.end !== i)
+                            .map(edge => ({
+                                start: edge.start > i ? edge.start - 1 : edge.start,
+                                end: edge.end > i ? edge.end - 1 : edge.end,
+                            }));
+                        setEdges(newEdges);
+        
                         break;
                     }
                 }
@@ -104,31 +110,32 @@ const Graph = ({ nodes, setNodes, edges, setEdges }) => {
             });
         };
 
-        const drawEdges = (p) => {
-            edges.forEach(edge => {
-                const start = nodes[edge.start];
-                const end = nodes[edge.end];
-                p.stroke("#666d94");
+        // Función auxiliar para dibujar las aristas
+            const drawEdges = (p) => {
+                edges.forEach(edge => {
+                    const start = nodes[edge.start];
+                    const end = nodes[edge.end];
+                    p.stroke("#666d94");
                 p.strokeWeight(7);
                 p.line(start.x, start.y, end.x, end.y);
 
-                p.stroke("white");
-                p.strokeWeight(1);
-                p.line(start.x, start.y, end.x, end.y);
-            });
+                p.stroke("white"); // Color del borde de las aristas
+                    p.strokeWeight(1); // Grosor del borde de las aristas
+                    p.line(start.x, start.y, end.x, end.y); // Dibuja la línea que representa la arista
+                });
+            };
         };
-    };
 
+    // Configura el sketch de p5.js cuando el componente se monta y lo limpia cuando se desmonta
     useEffect(() => {
         let myP5 = new p5(sketch, canvasRef.current);
 
         return () => {
-            // Cleanup
-            myP5.remove();
+            myP5.remove(); // Limpia el sketch de p5.js
         };
-    }, [nodes, edges]);
+    }, [nodes, edges]); // Dependencias del efecto: los nodos y las aristas
 
-    return <div ref={canvasRef} style={{ width: '100%', height: '100vh' }}></div>;
+    return <div ref={canvasRef} style={{ width: '100%', height: '100vh' }}></div>; // Renderiza el contenedor del lienzo
 };
 
 export default Graph;
